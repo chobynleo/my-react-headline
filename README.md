@@ -1,6 +1,6 @@
 # module-starter
 
-应用开发框架SinoGear赛姬的模块模板，修改这里可对模块进行介绍。
+应用开发框架SinoGear的模块模板，这里我主要是写了一个headline的modules进行测试。
 
 ## 目录介绍
 
