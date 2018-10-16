@@ -1,0 +1,367 @@
+/* 今日头条全局类 */
+.headline {
+}
+/* 左侧菜单栏 */
+.indexChannel {
+  float: left;
+  width: 110px;
+  height: 600px;
+  margin: 30px;
+}
+.channel {
+  float: left;
+  width: 110px;
+  zoom: 1;
+}
+.fixed {
+  position: fixed;
+  top: 30px;
+}
+.channel:after {
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.channel .logo {
+  display: block;
+  width: 110px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+.channel img {
+  width: 108px;
+  height: 27px;
+}
+.channelItem {
+  display: block;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #444;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  transition-property: color, background-color;
+}
+.channel-item.active {
+  background-color: #ed4040;
+  color: #fff;
+}
+.channel a {
+  color: #222;
+  background: 0 0;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.channel ul {
+  width: 110px;
+  padding: 0px;
+  list-style: none;
+}
+.channel li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.channel li :hover {
+  background-color: #ed4040;
+  color: #fff;
+}
+.LeftBody {
+  width: 150px;
+  float: left;
+}
+/* 右侧主体 */
+.carousel {
+  margin-bottom: 6px;
+}
+.carousel:after {
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  display: block;
+  content: '';
+  clear: both;
+}
+.indexContent {
+  float: left;
+  width: 660px;
+}
+.slideList {
+  float: left;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), #000);
+}
+
+.slideList .slideItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  z-index: 1;
+}
+.slideList .slideItemActive {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+}
+
+.slideList .slideItem img {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 22px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-image: linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+}
+.slideTab {
+  float: right;
+  width: 60px;
+  height: 300px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #222;
+  padding: 7px 0;
+}
+
+.slideTabItem {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+.slideTabItem div {
+  width: 100%;
+  height: 100%;
+}
+.slideTab .slideTabItemActive {
+  background: rgba(237, 64, 64, 0.8);
+  z-index: 11;
+}
+
+/* 右侧加载 loadmore */
+.loadMore {
+  width: 660px;
+}
+.msgAlertPlace {
+  height: 32px;
+}
+.msgAlert {
+  position: relative;
+  line-height: 32px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: #60a3f5;
+  background-color: rgba(96, 163, 245, 0.85);
+  z-index: 20;
+  transition-property: height;
+  transition-delay: 0;
+  transition-duration: 0.5s;
+}
+.msgAlert span {
+  cursor: pointer;
+  min-width: 500px;
+  display: inline-block;
+}
+.singleModeLBox {
+  float: left;
+  width: 158px;
+  height: 102px;
+  margin-right: 16px;
+}
+.singleMode {
+  height: 123px;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.singleMode:after {
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  display: block;
+  content: '';
+  clear: both;
+}
+.buiBox {
+  display: block;
+  zoom: 1;
+}
+.imgWrap {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  background: #e8e8e8;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+.imgWrap,
+.imgWrap:before {
+  display: inline-block;
+  height: 100%;
+}
+.imgWrap > img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  transition: all 0.5s ease-out 0.1s;
+}
+
+//
+.singleModeRBox {
+  height: 100%;
+  overflow: hidden;
+}
+.singleModeRBox:before {
+  content: '';
+  width: 0;
+  font-size: 0;
+  height: 100%;
+  visibility: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.singleModeRBoxInner {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.titleBox {
+  display: block;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  font-weight: 700;
+  max-height: 52px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.link {
+  color: #222;
+  background: 0 0;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.footerBar {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+.footerBar:after {
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  display: block;
+  content: '';
+  clear: both;
+}
+.footerBarLeft {
+  font-size: 0;
+  line-height: 20px;
+}
+.footerBarAction {
+  font-size: 14px;
+  line-height: 1;
+}
+.footerBarAction,
+.footerBarLeft {
+  display: inline-block;
+  vertical-align: middle;
+}
+.other {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #eee;
+  margin-right: 10px;
+  padding: 1px 2px;
+  border: 1px solid #eee;
+  display: inline-block;
+  vertical-align: middle;
+  border-color: #87a5b5 !important;
+  color: #87a5b5 !important;
+}
+.mediaAvatar {
+  color: #fff;
+  margin-right: 2px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #eee;
+  overflow: hidden;
+}
+.mediaAvatar > img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 5px;
+  border-radius: 50%;
+  margin-right: 2px;
+  text-align: center;
+  border-style: none;
+  overflow: hidden;
+}
+.source {
+  display: inline-block;
+  vertical-align: middle;
+  color: #777;
+  font-size: 14px;
+}
+.source:hover {
+  color: #406599;
+}
+
+.RightBody {
+  float: left;
+  width: 660px;
+  margin: 30px;
+}
+.RightBody ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.img {
+  width: 400px;
+  height: 150px;
+}
+
+/* 通用样式 */
+.fl {
+  float: left;
+}

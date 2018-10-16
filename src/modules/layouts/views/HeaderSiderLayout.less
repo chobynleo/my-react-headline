@@ -1,0 +1,50 @@
+@sg-headersiderlayout-header-text-color: fade(#fff, 65); // HeaderSiderLayout布局 头部 文字 颜色
+@sg-headersiderlayout-header-bg: #0a2152; // HeaderSiderLayout布局 头部 背景色
+@sg-headersiderlayout-header-badge-color: @sg-headersiderlayout-header-text-color; // HeaderSiderLayout布局 头部 badge 颜色
+@sg-headersiderlayout-header-input-color: @sg-headersiderlayout-header-text-color; // HeaderSiderLayout布局 头部 input框 颜色
+
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  background: @layout-sider-background;
+  color: @sg-headersiderlayout-header-text-color;
+  & :global(.ant-badge) {
+    color: @sg-headersiderlayout-header-badge-color;
+  }
+  & :global(.ant-input) {
+    color: @sg-headersiderlayout-header-input-color;
+  }
+  [class^='action'] {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    &:global(.ant-popover-open) {
+      background: @primary-9;
+    }
+  }
+  [class^='action_']:hover {
+    background: @primary-9;
+    color: @primary-1;
+  }
+  [class^='action_']:first-child {
+    background: transparent;
+    padding: 0;
+  }
+  & :global(.anticon-menu-unfold:hover),
+  & :global(.anticon-menu-fold:hover) {
+    background: @primary-9;
+  }
+}
+
+.content {
+  height: 100%;
+  & [class*='pageHeaderContainer'] > [class*='content'] {
+    margin: 24px -24px;
+  }
+}
+.content_mobile {
+  margin: 0 12px;
+  height: 100%;
+}

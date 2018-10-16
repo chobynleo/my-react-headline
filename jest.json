@@ -1,0 +1,13 @@
+{
+  "collectCoverage": true,
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "moduleNameMapper": {
+    ".*\\.(css|less|scss)$": "identity-obj-proxy"
+  },
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}

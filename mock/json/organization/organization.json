@@ -1,0 +1,38 @@
+{
+  "organizations": [
+    {
+      "id": "478bc20b-d13e-4831-b834-a7beb8d4eb31",
+      "orgName": "第二级2",
+      "parentId": "cf14602a-9c0d-4410-9af1-2614184d425c",
+      "parentOrgName": "第一级2",
+      "orgCode": "01010201",
+      "valid": true
+    },
+    {
+      "id": "8b1e81ab-dac4-4ff4-9137-ee18995da9ca",
+      "orgName": "第二级1",
+      "parentId": "95458d83-e237-47c7-9fa5-c68dcc4bc1d8",
+      "parentOrgName": "第一级1",
+      "orgCode": "01010101",
+      "valid": true
+    },
+    {
+      "id": "c955b0b8-8b05-428d-808d-e7364189e6d7",
+      "orgName": "第一级3",
+      "orgCode": "010103",
+      "valid": true
+    },
+    {
+      "id": "cf14602a-9c0d-4410-9af1-2614184d425c",
+      "orgName": "第一级2",
+      "orgCode": "010102",
+      "valid": true
+    },
+    {
+      "id": "95458d83-e237-47c7-9fa5-c68dcc4bc1d8",
+      "orgName": "第一级1",
+      "orgCode": "010101",
+      "valid": true
+    }
+  ]
+}

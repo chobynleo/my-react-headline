@@ -1,0 +1,62 @@
+@sg-login-input-icon-color: #1461a6; // 登录页面 用户名与密码 输入框图标颜色
+@sg-login-bottom-text-color: #666; //  登录页面表单 底部文字字体颜色@import '../../../themes/default';
+@sg-login-input-text-color: #1461a6; //  登录页面表单 输入框文字颜色
+
+.form {
+  width: 330px;
+  position: relative;
+  margin: 0 auto;
+  height: 380px;
+  padding: 0 36px 36px 36px;
+  text-align: center;
+  & :global(.anticon) {
+    color: @sg-login-input-icon-color;
+  }
+  input,
+  button {
+    width: 100%;
+    border-radius: 10px;
+  }
+  :global {
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      color: @sg-login-input-text-color;
+    }
+  }
+
+  p {
+    color: @sg-login-bottom-text-color;
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  img {
+    width: 40px;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}

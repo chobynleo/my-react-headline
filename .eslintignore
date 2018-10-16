@@ -1,0 +1,5 @@
+#自动忽略的文件
+node_modules
+/node_modules/**
+*.sh
+webpack.config.js

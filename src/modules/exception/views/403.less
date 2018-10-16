@@ -1,0 +1,30 @@
+@sg-exception-403-code-color: #9fd3ff; // 403异常页面 状态码 文字颜色
+@sg-exception-403-decs-color: @sg-exception-403-code-color; // 403异常页面 状态描述 文字颜色
+@sg-exception-403-btn-color: #ffffff; // 403异常页面 按钮 文字颜色
+@sg-exception-403-bth-active-bg: #e79c1a; // 403异常页面 按钮 hover或active状态  背景色
+@sg-exception-403-bth-active-border-color: @sg-exception-403-bth-active-bg; // 403异常页面 按钮 hover或active状态  边框颜色
+
+@import '~antd/lib/style/themes/default.less';
+
+.exception403 {
+  [class*='content'] {
+    h1 {
+      color: @sg-exception-403-code-color;
+    }
+    [class*='desc'] {
+      color: @sg-exception-403-decs-color;
+    }
+    [class*='action'] {
+      & :global(.ant-btn) {
+        &-primary {
+          color: @sg-exception-403-btn-color;
+          &:hover,
+          &:focus {
+            background: @sg-exception-403-bth-active-bg;
+            border-color: @sg-exception-403-bth-active-border-color;
+          }
+        }
+      }
+    }
+  }
+}

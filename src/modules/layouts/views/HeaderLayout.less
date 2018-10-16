@@ -1,0 +1,46 @@
+@sg-headerlayout-header-text-color: fade(#fff, 65); // HeaderLayout布局 头部 文字 颜色
+@sg-headerlayout-header-bg: #0a2152; // HeaderLayout布局 头部 背景色
+@sg-headerlayout-header-badge-color: @sg-headerlayout-header-text-color; // HeaderLayout布局 头部 badge 颜色
+@sg-headerlayout-header-input-color: @sg-headerlayout-header-text-color; // HeaderLayout布局 头部 input框 颜色
+
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  background: @sg-headerlayout-header-bg;
+  color: @sg-headerlayout-header-text-color;
+  & :global(.ant-badge) {
+    color: @sg-headerlayout-header-badge-color;
+  }
+  & :global(.ant-input) {
+    color: @sg-headerlayout-header-input-color;
+  }
+  [class*='action'] {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    &:global(.ant-popover-open) {
+      background: @primary-9;
+    }
+  }
+  [class*='action']:hover {
+    background: @primary-9;
+    color: @primary-1;
+  }
+  [class*='action']:first-child {
+    background: transparent;
+    padding: 0;
+  }
+  & :global(.anticon-menu-unfold:hover),
+  & :global(.anticon-menu-fold:hover) {
+    background: @primary-9;
+  }
+}
+.content {
+  height: 100%;
+}
+.content_mobile {
+  margin: 0 12px;
+  height: 100%;
+}

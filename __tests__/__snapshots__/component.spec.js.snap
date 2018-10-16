@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test 4: SGButton snapshot renders correctly 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "ant-btn",
+          "type": "button",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "data": "Follow",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "span",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+          },
+        ],
+        "name": "button",
+        "next": null,
+        "parent": null,
+        "prev": null,
+        "root": [Circular],
+        "type": "tag",
+      },
+    ],
+    "name": "root",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "type": "root",
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xmlMode": false,
+  },
+}
+`;
